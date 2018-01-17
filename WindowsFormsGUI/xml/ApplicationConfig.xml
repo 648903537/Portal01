@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ApplicationConfig>
+  <LoginParameters>
+    <StationNumber>XOFL01-002-01</StationNumber>
+    <Client>01</Client>
+    <RegistrationType>S</RegistrationType>
+    <RefreshTimeSpan>10</RefreshTimeSpan> 
+    <!--unit is 's'-->
+    <ClearConsoleTimeSpan>1</ClearConsoleTimeSpan>
+    <!--unit is 'Hr'-->
+    <DBType>ORACLE</DBType>
+    <AUTH_TEAM></AUTH_TEAM>
+
+    <!--真实区-->
+    <!--<IPAddress>172.17.1.5</IPAddress>
+    <Port>50550</Port>-->
+
+    <!-- 测试:本机做服务端创建接口 -->
+    <IPAddress>127.0.0.1</IPAddress>
+    <Port>50550</Port>
+    
+    <!--后台跑数据是否进行-->
+    <OpenPotal>N</OpenPotal>
+    <!--开启工单修改功能等-->
+    <WorkOrderOpen>N</WorkOrderOpen>
+    <!--是否开启FujiTrax连接-->
+    <FujiTraxOpen>N</FujiTraxOpen>
+    
+    <CheckItemPattern>\[[^\[\]]+\]</CheckItemPattern>
+    <FujiTraxConnection>tte;tte;172.17.2.2:1521;fujidb</FujiTraxConnection>
+    <LCRPartPattern>^PC7\S*$|^PCH\S*$|^PC5\S*$|^PCC\S*$|^PRC\S*$|^PRM\S*$</LCRPartPattern>
+    <omitFujiPartPattern>.*</omitFujiPartPattern>
+    <!--是否将数据写入到FUJITRACE(Enable/Disable)-->
+    <InsertFujiData>Disable</InsertFujiData>
+    <SyncICPartToiTAC>Enable</SyncICPartToiTAC>
+    <TRANSFER_AUTO_STOCK_IN>0E10;0X10</TRANSFER_AUTO_STOCK_IN>
+    <CGS_DB_SERVER>uid;pwd;dsn</CGS_DB_SERVER>
+    <CGS_DB_SERVER_OLEDB>CGS;172.17.1.5:50000;cgsapp;T0mcat4Fun</CGS_DB_SERVER_OLEDB>
+  </LoginParameters>
+</ApplicationConfig>

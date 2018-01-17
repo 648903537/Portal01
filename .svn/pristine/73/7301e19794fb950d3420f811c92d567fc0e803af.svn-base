@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <instances defaultInstance="ORACLE">
+    <instance name="ORACLE" type="ORACLE" connectionString="AMTEC" isFullString="false" isEncrypt="false"/>
+  </instances>
+  <connectionStrings>
+    <connectionString name="AMTEC">
+      <parameters>
+        <!--<parameter name="server" value="DMSTTE" isSensitive="false"/>-->
+
+        <!--测试区-->
+        <!--<parameter name="server" value="172.17.1.4:1521/dmstest" isSensitive="false"/>-->
+
+        <!--待测正式区-->
+        <parameter name="server" value="10.2.2.104:1521/dmstest" isSensitive="false"/>
+
+        <!--生产区-->
+        <!--<parameter name="server" value="172.17.1.1:1521/DMSTTE" isSensitive="false"/>-->
+
+        <parameter name="user" value="system"></parameter>
+        <parameter name="pwd" value="system_pwd"></parameter>
+
+      </parameters>
+      <fullString></fullString>
+    </connectionString>
+  </connectionStrings>
+</configuration>

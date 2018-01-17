@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<List>
+  <Customer>
+    <Code>CustomerCodeA</Code>
+    <BarcodeType>1D</BarcodeType>
+    <CustomerPN>^q(.*)</CustomerPN>
+    <Qty>^p(.*)</Qty>
+  </Customer>
+  <Customer>
+    <Code>CustomerNameB</Code>
+    <BarcodeType>1D</BarcodeType>
+    <CustomerPN>^B(.*)-.*</CustomerPN>
+    <Qty>^(\d.*)</Qty>
+  </Customer>
+  <Customer>
+    <Code>CustomerNameC</Code>
+    <BarcodeType>2D</BarcodeType>
+    <BarcodePattern></BarcodePattern>
+    <CustomerPN>1</CustomerPN>
+    <Qty>2</Qty>
+  </Customer>
+</List>
